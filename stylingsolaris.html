@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Connor Snyder Design</title>
+    <!-- PAGE LINKS -->
+    <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' />
+    <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overflow-x: hidden;
+      }
+      /* NAVIGATION */
+      header {
+        background-color: #DFD033;
+        display: flex;
+        position: fixed;
+        top: 0; left: 0; bottom: 0;
+        width: 200px;
+      }
+      header .mainnav {
+        background: none;
+        margin: auto;
+      }
+      h1 {
+        font-family: 'Gilroy-Bold', sans-serif;
+        color: white;
+        padding-bottom: 10px;
+      }
+      .mainnav a {
+        text-decoration: none;
+        transition: .25s ease-in-out;
+        font: 300 16px/1.5 'Jura';
+      }
+      ul {
+        list-style-type: none;
+      }
+      /*
+      =love hate */
+      .mainnav a:link, /* unvisited */
+      .mainnav a:visited {
+        color: white;
+      }
+      .mainnav a:hover,
+      .mainnav a:active {
+        color: black;
+      }
+      /* NAVIGATION END */
+
+      /* TEXT STYLING */
+      h2 {
+        margin: 20px 0;
+        /* color: black; */
+        text-transform: uppercase;
+        padding-left: 10px;
+      }
+      p {
+        margin-bottom: 20px;
+        padding-left: 10px;
+      }
+      /* body text styling header + paragraphs */
+      body {
+        background-color: #f2f2f2; /* cultured */
+        color: #343633; /* black olive */
+        font: 300 16px/1.5 'Jura';
+      }
+      /* IMAGES */
+      img {
+        width: 100%;
+      }
+      /* Flexbox */
+      .topimage {
+        /* background-color: tomato; */
+        display: flex;
+        margin-top: 30px;
+        margin-left: 200px;
+        padding-left: 50px;
+        padding-right: 50px;
+        flex-direction: column;
+
+      }
+      .detailimages {
+        display: flex;
+        margin-left: 200px;
+        padding-right:50px;
+        padding-left: 50px;
+      }
+      .detailimages img {
+        flex: 0 1 50%;
+        padding: 5px;
+      }
+      .bagimage {
+        display: flex;
+        margin-left: 200px;
+        padding-right:50px;
+        padding-left: 50px;
+        padding-bottom: 30px;
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+
+      <!-- MAIN NAVIGATION -->
+      <header class="side-bar">
+
+        <!-- MAIN NAVIGATION -->
+        <nav class="mainnav">
+
+          <!-- PAGE TITLE -->
+          <h1>Connor Snyder</h1>
+
+          <!-- MENU -->
+          <ul class="menu">
+            <!-- HOME -->
+            <li><a href="stylingmainpage.html">Graphic Design</a></li>
+            <!-- PHOTOGRAPHY -->
+            <li><a href="#">Photography</a></li>
+            <!-- CONTACT -->
+            <li><a href="stylingcontactpage.html">About | Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <!-- flex container 1 -->
+        <div class="topimage">
+          <a data-fancybox href="solaris_mockup_horizontal.png"><img class="main-img" src="solaris_mockup_horizontal.png" width="" height="" alt="art book cover" /></a>
+          <h2>Solaris Tanning Gel</h2>
+          <p>Prompt: Self led project conceptualization to finish. Create a high end tanning gel.</p>
+          <p>Sunscreen and tanning gels can be found in any drugstore, mostly with an overly commercial type feeling of design. I wanted
+              to create a tanning gel spf that felt high end, that you would want to carry with you in your bag, something functional and beautiful.
+              Opposed to the bright, blues and oranges or browns that are often used, I opted for mediterranean inspired champagne yellow
+              and a saphire blue, still reminiscent of the sands/rocks and ocean/sky but, understated colors that wouldnt clash with its sorroundings. Lastly, I chose a display font to give it a distinct style that differentiates itself from other brands.</p>
+        </div>
+
+        <!-- flex container-2 -->
+        <div class="detailimages">
+          <a data-fancybox href="solaris_businesscard_blue_mockup.jpg"><img class="detail-1" src="solaris_businesscard_blue_mockup.jpg" width="" height="" alt="art book cover" /></a>
+          <a data-fancybox href="solaris_businesscard_yellow_mockup.jpg"><img class="detail-2" src="solaris_businesscard_yellow_mockup.jpg" width="" height="" alt="art book cover" /></a>
+        </div>
+        <div class="bagimage">
+          <a data-fancybox href="solaris_bag_mockup.jpg"><img class="bag" src="solaris_bag_mockup.jpg" width="" height="" alt="art book cover" /></a>
+        </div>
+
+
+
+      </main>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+    </html>

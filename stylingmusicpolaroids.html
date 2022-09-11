@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Connor Snyder Design</title>
+    <!-- PAGE LINKS -->
+    <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' />
+    <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overflow-x: hidden;
+      }
+      /* NAVIGATION */
+      header {
+        background-color: #F15A24;
+        display: flex;
+        position: fixed;
+        top: 0; left: 0; bottom: 0;
+        width: 200px;
+      }
+      header .mainnav {
+        background: none;
+        margin: auto;
+      }
+      h1 {
+        font-family: 'Gilroy-Bold', sans-serif;
+        color: white;
+        padding-bottom: 10px;
+      }
+      .mainnav a {
+        text-decoration: none;
+        transition: .25s ease-in-out;
+        font: 300 16px/1.5 'Jura';
+      }
+      ul {
+        list-style-type: none;
+      }
+      /*
+      =love hate */
+      .mainnav a:link, /* unvisited */
+      .mainnav a:visited {
+        color: white;
+      }
+      .mainnav a:hover,
+      .mainnav a:active {
+        color: black;
+      }
+      /* NAVIGATION END */
+
+      /* TEXT STYLING */
+      h2 {
+        margin: 20px 0;
+        /* color: black; */
+        text-transform: uppercase;
+        padding-left: 60px;
+      }
+      p {
+        margin-bottom: 20px;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      /* body text styling header + paragraphs */
+      body {
+        background-color: #f2f2f2; /* cultured */
+        color: #343633; /* black olive */
+        font: 300 16px/1.5 'Jura';
+      }
+      /* IMAGES */
+      img {
+        width: 100%;
+      }
+      .topimage {
+        margin-left: 200px;
+      }
+      .topimage img {
+        display: block;
+        max-width: 60%;
+        margin: 0 auto;
+      }
+      .detailimages {
+        display: flex;
+        margin-left: 200px;
+        padding-right:50px;
+        padding-left: 50px;
+      }
+      .detailimages img {
+        flex: 0 1 50%;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+
+      <!-- MAIN NAVIGATION -->
+      <header class="side-bar">
+
+        <!-- MAIN NAVIGATION -->
+        <nav class="mainnav">
+
+          <!-- PAGE TITLE -->
+          <h1>Connor Snyder</h1>
+
+          <!-- MENU -->
+          <ul class="menu">
+            <!-- HOME -->
+            <li><a href="stylingmainpage.html">Graphic Design</a></li>
+            <!-- PHOTOGRAPHY -->
+            <li><a href="#">Photography</a></li>
+            <!-- CONTACT -->
+            <li><a href="stylingcontactpage.html">About | Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <!-- flex container 1 -->
+        <div class="topimage">
+          <a data-fancybox href="polaroids.gif"><img class="main-img" src="polaroids.gif" width="" height="" alt="art book cover" /></a>
+          <h2>Music Listening Data Polaroids</h2>
+          <p>Prompt: Focus on something you do everyday and visualize that data</p>
+          <p>I chose music as my data and recorded my habits for two weeks. I then focused on the top
+              3 most listened to songs within the 3 genres as I tend to listen to the same songs on repeat.
+              Simply put, it is my listening habits for 3 songs from alternative, pop, and rock compared.
+              The variables I focused on in each genre were: minutes listened, mood, and activity I was
+              engaged in while listening.I used photos I have taken to express the energy of each genre.</p>
+        </div>
+        <!-- flex container-2 -->
+        <div class="detailimages">
+          <a data-fancybox href="musicpolaroidsproject.png"><img class="main-img" src="musicpolaroidsproject.png" width="" height="" alt="art book cover" /></a>
+        </div>
+      </main>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+    </html>
